@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task 3 - Advanced Styling and JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Advanced Styling and JavaScript</h1>
+        <p>Responsive Design + Quiz + Carousel + API Fetching</p>
+    </header>
+
+    <!-- RESPONSIVE DESIGN -->
+    <section class="responsive-section">
+
+        <h2>Responsive Design Cards</h2>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Mobile Responsive</h3>
+                <p>Optimized layouts for small mobile devices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Tablet Friendly</h3>
+                <p>Adaptive designs for medium screen devices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Desktop View</h3>
+                <p>Enhanced interface for large desktop screens.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMAGE CAROUSEL -->
+    <section class="carousel-section">
+
+        <h2>JavaScript Image Carousel</h2>
+
+        <div class="carousel">
+
+            <button id="prevBtn">❮</button>
+
+            <img
+                id="carouselImage"
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200"
+                alt="Carousel Image"
+            >
+
+            <button id="nextBtn">❯</button>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section">
+
+        <h2>Interactive Quiz</h2>
+
+        <div class="quiz-container">
+
+            <h3 id="question"></h3>
+
+            <div id="answers"></div>
+
+            <h2 id="score"></h2>
+
+        </div>
+
+    </section>
+
+    <!-- API FETCH -->
+    <section class="api-section">
+
+        <h2>Fetch Joke from API</h2>
+
+        <button id="fetchJoke">Get Joke</button>
+
+        <div class="joke-box">
+
+            <p id="jokeText">
+                Click the button to fetch a joke...
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Task 3 - Advanced CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

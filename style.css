@@ -1,0 +1,221 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e8f0ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* =========================
+   RESPONSIVE CARDS
+========================= */
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+/* =========================
+   IMAGE CAROUSEL
+========================= */
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel img{
+    width: 550px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.carousel button{
+    padding: 12px 18px;
+    font-size: 22px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.carousel button:hover{
+    background: #444;
+    transform: scale(1.05);
+}
+
+/* =========================
+   QUIZ SECTION
+========================= */
+
+.quiz-container{
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.quiz-btn{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quiz-btn:hover{
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+/* =========================
+   API SECTION
+========================= */
+
+.api-section button{
+    padding: 12px 22px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.api-section button:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.joke-box{
+    margin: 25px auto;
+    background: white;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* =========================
+   TABLET VIEW
+========================= */
+
+@media (max-width: 768px){
+
+    .carousel{
+        flex-direction: column;
+    }
+
+    .carousel img{
+        width: 90%;
+        height: auto;
+    }
+
+    .card{
+        width: 90%;
+    }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 480px){
+
+    header h1{
+        font-size: 24px;
+    }
+
+    section h2{
+        font-size: 24px;
+    }
+
+    .quiz-container{
+        width: 100%;
+    }
+
+    .carousel img{
+        width: 100%;
+    }
+}
